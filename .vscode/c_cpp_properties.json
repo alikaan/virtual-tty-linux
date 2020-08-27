@@ -1,0 +1,41 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/lib/gcc/x86_64-linux-gnu/8/include",
+                
+                "/usr/src/linux-headers-4.19.0-10-common/arch/x86/include/**",                
+                "/usr/src/linux-headers-4.19.0-10-common/include/**",  
+                
+                "/usr/src/linux-headers-4.19.0-10-amd64/arch/x86/include/**",                
+                "/usr/src/linux-headers-4.19.0-10-amd64/include/**"                       
+            ],
+            "defines": [
+                "__KERNEL__",
+                "CONFIG_X86_X32_ABI",
+                "CONFIG_AS_CFI=1",
+                "CONFIG_AS_CFI_SIGNAL_FRAME=1",
+                "CONFIG_AS_CFI_SECTIONS=1",
+                "CONFIG_AS_FXSAVEQ=1",
+                "CONFIG_AS_SSSE3=1",
+                "CONFIG_AS_CRC32=1",
+                "CONFIG_AS_AVX=1",
+                "CONFIG_AS_AVX2=1",
+                "CONFIG_AS_AVX512=1",
+                "CONFIG_AS_SHA1_NI=1",
+                "CONFIG_AS_SHA256_NI=1",
+                "MODULE"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "compilerArgs": [
+                "-nostdinc"                 
+            ],
+            "cStandard": "c11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}
